@@ -1,0 +1,10 @@
+﻿results/
+checkpoints/
+*.zip
+*.RData
+*.rds
+*.png
+*.pdf
+*.docx
+*.pptx
+*.html

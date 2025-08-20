@@ -1,0 +1,10 @@
+message('Running TNBC M1 pipeline...')
+ src <- function(p){p <- file.path('scripts', p); if (file.exists(p)) source(p) else message('skip: ', p)}
+ src('01_integration.R')
+ src('02_consensus_clustering.R')
+ src('03_cluster_profiling_enrichment.R')
+ src('04_survival.R')
+ src('05_classifier_train_cv.R')
+ src('06_inference_newcohort.R')
+ src('07_annotations_reports.R')
+ message('✅ Done. See results/TNBC_M1_master_index.html')
