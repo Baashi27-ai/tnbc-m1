@@ -1,0 +1,8 @@
+﻿name: tnbc-m1
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - r-base
+  - r-essentials
+  - pandoc
