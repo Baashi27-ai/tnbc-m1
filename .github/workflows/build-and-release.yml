@@ -62,3 +62,16 @@ jobs:
             results/m3/TNBC_repro_bundle.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Print CI log tail (last 200 lines)
+        if: always()
+        shell: pwsh
+        run: |
+          \ = 'results\REPORTS\ci_run_log.txt'
+          if (Test-Path \) {
+            Write-Host "
+--- ci_run_log.txt (tail) ---"
+            Get-Content \ -Tail 200
+          } else {
+            Write-Host "ci_run_log.txt not found."
+          }
