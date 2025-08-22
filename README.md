@@ -30,4 +30,16 @@
 ---
 
 ## 📈 Pipeline Overview
-(diagram placeholder — replace with your schematic later)
+~~~mermaid
+flowchart TD
+    A[Raw omics data] --> B[QC & Preprocessing]
+    B --> C[Feature engineering / normalization]
+    C --> D[Modeling & statistics]
+    D --> E[Results aggregation]
+    E --> F[Reports (DOCX/PDF)]
+    E --> G[Tables & Images Dictionary]
+    F --> H[Master bundle (ZIP)]
+    G --> H
+    H --> I[Checksums & Manifest]
+    I --> J[GitHub Release]
+~~~
