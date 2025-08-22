@@ -14,22 +14,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Quick visibility into what the runner sees
       - name: Show tree
         shell: pwsh
         run: |
           Write-Host "PWD: $PWD"
-          Get-ChildItem -Force
+          Get-ChildItem -Force | Format-Table -AutoSize
           if (Test-Path .\results) { Get-ChildItem -Recurse -Force .\results | Select-Object -First 50 | Format-Table -AutoSize }
 
-      # Run our PowerShell pipeline runner (it handles 'no R' gracefully)
-      - name: Run pipeline (PowerShell)
+      - name: Run pipeline (PowerShell, tee log)
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-          .\scripts\run_all.ps1 -Root "$PWD"
+          $log = Join-Path $PWD 'results\REPORTS\ci_run_log.txt'
+          if (!(Test-Path (Split-Path $log))) { New-Item -ItemType Directory -Force -Path (Split-Path $log) | Out-Null }
+          .\scripts\run_all.ps1 -Root "$PWD" *>&1 | Tee-Object -FilePath $log
+          # Succeed only if the manifest exists (pipeline finished)
+          if (Test-Path 'results\REPORTS\release_manifest_M3.tsv') { exit 0 } else { exit 1 }
 
       - name: List outputs
+        if: always()
         shell: pwsh
         run: |
           Write-Host "`n--- REPORTS ---"
@@ -37,7 +40,6 @@ jobs:
           Write-Host "`n--- m3 ---"
           if (Test-Path .\results\m3) { Get-ChildItem .\results\m3 -Force | Format-Table -AutoSize } else { Write-Host "missing: results\m3" }
 
-      # Always upload build artifacts for inspection (even if release step is skipped)
       - name: Upload CI artifacts (always)
         if: always()
         uses: actions/upload-artifact@v4
@@ -49,7 +51,6 @@ jobs:
           if-no-files-found: warn
           retention-days: 7
 
-      # Only create a GitHub Release on a tag
       - name: Upload Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
