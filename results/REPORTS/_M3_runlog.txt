@@ -1,0 +1,311 @@
+root: C:/TNBC_project 
+report dir: C:/TNBC_project/results/REPORTS 
+M3 dir: C:/TNBC_project/results/m3 
+
+Found:
+  png: 0  jpg: 0  svg: 0 
+  tsv: 0  csv: 0  xlsx: 0 
+
+✅ DOCX written: C:/TNBC_project/results/REPORTS/TNBC_Master_Report.docx size: 12.50 KB 
+Trying PDF export via doconv...
+✅ index.html written: C:/TNBC_project/results/m3/index.html 
+✅ ZIP created: C:/TNBC_project/results/m3/TNBC_master_bundle.zip size: 12.23 KB 
+
+=== DONE (M3 builder) ===
+📦 parameters → C:/TNBC_project/results/REPORTS/parameters_M3.json 
+🧾 manifest  → C:/TNBC_project/results/REPORTS/deliverables_manifest_m3.tsv | rows: 15 
+🧊 sessionInfo → C:/TNBC_project/results/REPORTS/sessionInfo_M3.txt 
+🧰 repro zip → C:/TNBC_project/results/m3/TNBC_repro_bundle.zip | size: NA bytes
+✅ M3 reproducibility pack completed.
+— Local files —
+                         file exists   size
+           parameters_M3.json   TRUE   8576
+ deliverables_manifest_m3.tsv   TRUE   2740
+           sessionInfo_M3.txt   TRUE   2100
+        TNBC_repro_bundle.zip  FALSE     NA
+       TNBC_master_bundle.zip   TRUE  12520
+      TNBC_Master_Report.docx   TRUE  12805
+       TNBC_Master_Report.pdf   TRUE 111922
+
+(no repro ZIP found)
+✅ Rebuilt repro ZIP → C:/TNBC_project/results/m3/TNBC_repro_bundle.zip | size: 7805 bytes
+tables: 0 → C:/TNBC_project/results/REPORTS/dict_tables.tsv 
+images: 0 → C:/TNBC_project/results/REPORTS/dict_images.tsv 
+rdocx document with 2 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                               text style_name content_type
+1    NA     NA TNBC – Tables & Figures Dictionary  heading 1    paragraph
+rdocx document with 3 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                           text style_name content_type
+1    NA     NA Generated: 2025-08-21 16:47:28     Normal    paragraph
+rdocx document with 4 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                  text style_name content_type
+1    NA     NA Root: C:/TNBC_project     Normal    paragraph
+rdocx document with 5 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id text style_name content_type
+1    NA     NA          Normal    paragraph
+rdocx document with 6 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id    text style_name content_type
+1    NA     NA Summary  heading 2    paragraph
+tables: 0 → C:/TNBC_project/results/REPORTS/dict_tables.tsv 
+images: 0 → C:/TNBC_project/results/REPORTS/dict_images.tsv 
+rdocx document with 2 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                               text style_name content_type
+1    NA     NA TNBC – Tables & Figures Dictionary  heading 1    paragraph
+rdocx document with 3 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                           text style_name content_type
+1    NA     NA Generated: 2025-08-21 16:51:21     Normal    paragraph
+rdocx document with 4 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                  text style_name content_type
+1    NA     NA Root: C:/TNBC_project     Normal    paragraph
+rdocx document with 5 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id text style_name content_type
+1    NA     NA          Normal    paragraph
+rdocx document with 6 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id    text style_name content_type
+1    NA     NA Summary  heading 2    paragraph
+rdocx document with 8 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id   text style_name content_type
+1    NA     NA Tables  heading 2    paragraph
+rdocx document with 9 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                           text style_name content_type
+1    NA     NA No tables found in results/m3.     Normal    paragraph
+rdocx document with 10 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id   text style_name content_type
+1    NA     NA Images  heading 2    paragraph
+rdocx document with 11 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                           text style_name content_type
+1    NA     NA No images found in results/m3.     Normal    paragraph
+docx  → C:/TNBC_project/results/REPORTS/TNBC_Master_Dictionary.docx ( 12.63 KB )
+✅ Dictionary build complete.
+null device 
+          1 
+✅ Demo data written into results/m3/ (tables + plots)
+ctionary.docx ( 12.63 KB )
+✅ Dictionary build complete.
+null device 
+          1 
+✅ Demo data written into results/m3/ (tables + plots)

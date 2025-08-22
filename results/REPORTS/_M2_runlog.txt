@@ -1,0 +1,6 @@
+
+=== Relaunching TNBC M2 @ 2025-08-21 06:47:36 ===
+root: C:/TNBC_project 
+script dir: C:/TNBC_project/scripts_m2 
+
+>>> [00_setup] starting...
