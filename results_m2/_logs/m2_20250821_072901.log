@@ -1,0 +1,133 @@
+G3;Logging to: C:/TNBC_project/results_m2/_logs/m2_20250821_072901.log
+g
+> message('M2/04_modeling')
+G3;M2/04_modeling
+g
+> X_fe <- readr::read_tsv(file.path(dirs$fe,'X_features_topVar.tsv'), show_col_types = FALSE)
+✗ [ 04_modeling.R ] ERROR: 'C:/TNBC_project/results_m2/03_feature_engineering/X_features_topVar.tsv' does not exist. 
+Error in value[[3L]](cond) : [M2] aborted on stage 04_modeling.R
+📝 DOCX → C:/TNBC_project/results/REPORTS/TNBC_M2_summary.docx | size: 12623 
+📦 Bundle → C:/TNBC_project/results/m2/M2_bundle.zip | size: NA 
+M2_bundle_exists      DOCX_exists 
+           FALSE             TRUE 
+→ Trying Pandoc→PDF…
+→ Trying LibreOffice (doconv) fallback…
+Error : Conversion failed.
+Your PowerShell execution policy 'Restricted' prevents script execution.
+Run one of the following commands in PS as admin to enable script execution: 
+  `Set-ExecutionPolicy Bypass`
+  `Set-ExecutionPolicy Unrestricted`
+
+⚠ Could not make a PDF automatically.
+Tips:
+ - Install TinyTeX: tinytex::install_tinytex()  (then re-run Method A)
+ - Or install LibreOffice and ensure 'soffice' is on PATH (Method B)
+→ Trying doconv::to_pdf() ...
+→ Trying LibreOffice (soffice) headless ...
+Error in if (soff != "") { : missing value where TRUE/FALSE needed
+DOCX exists?  TRUE 
+PDF  exists?  FALSE 
+Error in doconv::to_pdf(input = docx, output = pdf, overwrite = TRUE) : 
+  unused argument (overwrite = TRUE)
+DOCX exists?  TRUE 
+PDF  exists?  FALSE 
+Error in doconv::to_pdf(input = docx, output = pdf, overwrite = TRUE) : 
+  unused argument (overwrite = TRUE)
+[1] NA
+DOCX exists?  TRUE 
+PDF  exists?  FALSE 
+Error in doconv::to_pdf(input = docx, output = pdf, overwrite = TRUE) : 
+  unused argument (overwrite = TRUE)
+DOCX exists?  TRUE 
+PDF  exists?  FALSE 
+Error in doconv::to_pdf(input = docx, output = pdf, overwrite = TRUE) : 
+  unused argument (overwrite = TRUE)
+[1] FALSE
+[1] NA
+❌ PDF not created (install LibreOffice or try again).
+Error in body_add_list(doc, value = bullets, style = "Normal", level = 1) : 
+  could not find function "body_add_list"
+rdocx document with 5 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id
+1    NA     NA
+                                                                                                           text
+1 • M1: New cohort index: C:/TNBC_project/results/integration/consensus_clustering/newcohort_predict/index.html
+  style_name content_type
+1     Normal    paragraph
+rdocx document with 6 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                                                                  text style_name content_type
+1    NA     NA • M1: Master index: C:/TNBC_project/results/TNBC_M1_master_index.html     Normal    paragraph
+rdocx document with 7 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                                                                    text style_name content_type
+1    NA     NA • M1 summary DOCX: C:/TNBC_project/results/REPORTS/TNBC_M1_summary.docx     Normal    paragraph
+rdocx document with 8 element(s)
+
+* styles:
+                Normal              heading 1              heading 2              heading 3 
+           "paragraph"            "paragraph"            "paragraph"            "paragraph" 
+Default Paragraph Font           Normal Table                No List                 strong 
+           "character"                "table"            "numbering"            "character" 
+              centered         table_template    Light List Accent 2            Titre 1 Car 
+           "paragraph"                "table"                "table"            "character" 
+           Titre 2 Car            Titre 3 Car          Image Caption          Table Caption 
+           "character"            "character"            "paragraph"            "paragraph" 
+    Table Professional                  toc 1                  toc 2           Balloon Text 
+               "table"            "paragraph"            "paragraph"            "paragraph" 
+   Texte de bulles Car           reference_id          graphic title            table title 
+           "character"            "character"            "paragraph"            "paragraph" 
+
+* Content at cursor location:
+  level num_id                                                                    text style_name content_type
+1    NA     NA • M2 summary DOCX: C:/TNBC_project/results/REPORTS/TNBC_M2_summary.docx     Normal    paragraph
+Error in block_table(x = value, header = header, properties = pt, alignment = alignment) : 
+  is.data.frame(x) is not TRUE
+G3;✅ Placeholder report generated at: C:/TNBC_project/results/REPORTS/TNBC_Master_Report.docx
+g

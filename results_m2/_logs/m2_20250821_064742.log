@@ -1,0 +1,62 @@
+G3;Logging to: C:/TNBC_project/results_m2/_logs/m2_20250821_064742.log
+g
+> message('M2/04_modeling')
+G3;M2/04_modeling
+g
+> X_fe <- readr::read_tsv(file.path(dirs$fe,'X_features_topVar.tsv'), show_col_types = FALSE)
+XXX [04_modeling.R] ERROR: 'C:/TNBC_project/results_m2/03_feature_engineering/X_features_topVar.tsv' does not exist.
+Error in value[[3L]](cond) : 
+  [04_modeling.R] aborted. See log: C:/TNBC_project/results/REPORTS/_M2_runlog.txt
+✅ Exists:
+  index      qc   batch   feats  models  extval reports     log 
+  FALSE   FALSE   FALSE   FALSE   FALSE   FALSE   FALSE    TRUE 
+
+🔎 Log tail (if any warnings):
+[1] ""                                                  "=== Relaunching TNBC M2 @ 2025-08-21 06:47:36 ==="
+[3] "root: C:/TNBC_project "                            "script dir: C:/TNBC_project/scripts_m2 "          
+[5] ""                                                  ">>> [00_setup] starting..."                       
+Error in setwd(out_root) : cannot change working directory
+                                                     size mtime
+C:/TNBC_project/results/m2/M2_bundle.zip               NA  <NA>
+C:/TNBC_project/results/REPORTS/TNBC_M2_summary.docx   NA  <NA>
+C:/TNBC_project/results/REPORTS/TNBC_M2_summary.pdf    NA  <NA>
+indexing newcohort_master_table.tsv [=======================================================] 186.72MB/s, eta:  0s                                                                                                                  indexing sample_annotations_with_cluster_labels.tsv [=======================================] 521.98MB/s, eta:  0s                                                                                                                  indexing integrated_features_scaled.tsv [=====================================================] 2.15GB/s, eta:  0s                                                                                                                  Error: unexpected '>' in:
+"        pvals <- apply(mm, 2, function(v) {
+            tryCatch(anova(lm(v ~ factor(mat$cluster)))$Pr(>"
+▶ M2 start
+
+> message('M2/00_setup: loading packages & helpers')
+G3;M2/00_setup: loading packages & helpers
+g
+> pkgs <- c(
++   'readr','dplyr','tibble','tidyr','ggplot2','stringr','purrr',
++   'pheatmap','Matrix','RColorBrewer','caret','randomForest'
++ )
+
+> new <- pkgs[!pkgs %in% rownames(installed.packages())]
+
+> if (length(new)) install.packages(new, repos = 'https://cloud.r-project.org')
+
+> invisible(lapply(pkgs, library, character.only = TRUE))
+
+> options(stringsAsFactors = FALSE)
+
+> root <- 'C:/TNBC_project'
+
+> dirs <- list(
++   results = file.path(root,'results_m2'),
++   qc      = file.path(root,'results_m2/01_qc'),
++   batch   = file.path(root,'results_m2/02_batch_correction'),
++   fe      = file.path(root,'results_m2/03_feature_engineering'),
++   modeling= file.path(root,'results_m2/04_modeling'),
++   ext     = file.path(root,'results_m2/05_external_validation'),
++   reports = file.path(root,'results_m2/06_reports'),
++   logs    = file.path(root,'results_m2/_logs'),
++   chk     = file.path(root,'checkpoints_m2')
++ )
+
+> logfile <- file.path(dirs$logs, paste0('m2_', format(Sys.time(),'%Y%m%d_%H%M%S'), '.log'))
+
+> dir.create(dirname(logfile), recursive = TRUE, showWarnings = FALSE)
+
+> zz <- file(logfile, 'wt'); sink(zz, type='output'); sink(zz, type='message')
