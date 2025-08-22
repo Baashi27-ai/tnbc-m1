@@ -19,3 +19,28 @@ data_processed/
 data_raw/
 results/
 results//enrichment_/*.rds
+# --- TNBC local artifacts (do not track) ---
+*.RData
+.RData*
+*.rds
+*.log
+*.zip
+*.7z
+.DS_Store
+Thumbs.db
+
+# local work files
+README_local.md
+README_remote.md
+
+# generated outputs
+data_proc/
+results/HANDOFF_FINAL/
+results/m3/
+results/REPORTS/dict_*.tsv
+results/REPORTS/TNBC_Master_Dictionary.docx
+results/REPORTS/TNBC_Master_Dictionary.pdf
+
+# sensitive/plaintext lists
+expr_patients.txt
+meth_patients.txt
