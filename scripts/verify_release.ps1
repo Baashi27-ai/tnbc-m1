@@ -22,8 +22,8 @@ foreach ($ln in $lines) {
   $name = $m.Groups['name'].Value
 
   $candidates = @(
-    Join-Path $Rep $name,
-    Join-Path (Join-Path $Root 'results\m3') $name
+    (Join-Path $Rep $name)
+    (Join-Path (Join-Path $Root 'results\m3') $name)
   ) | Where-Object { Test-Path $_ }
 
   if (-not $candidates) {
