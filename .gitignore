@@ -44,3 +44,7 @@ results/REPORTS/TNBC_Master_Dictionary.pdf
 # sensitive/plaintext lists
 expr_patients.txt
 meth_patients.txt
+# --- extra ignore for local junk ---
+README.local.md
+README.remote.md
+data/
