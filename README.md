@@ -6,22 +6,41 @@
 ---
 
 ## 📌 Overview
-This repository powers the *end-to-end CI/CD pipeline* for the  
-Triple-Negative Breast Cancer (TNBC) Multi-Omics Project.
+This repository powers the end-to-end CI/CD pipeline for the *Triple-Negative Breast Cancer (TNBC) Multi-Omics Project*.
 
 Every tagged commit triggers GitHub Actions to:
-- ⚡ Run the analysis workflow (PowerShell + optional R).
-- 📦 Package *master* and *reproducibility* bundles.
-- 📝 Generate *checksums* & *release manifests*.
-- 🚀 Publish a *GitHub Release* with all artifacts.
+- Run the analysis workflow (PowerShell + optional R).
+- Package master and reproducibility bundles.
+- Generate checksums & release manifests.
+- Publish a GitHub Release with all artifacts.
 
 ---
 
-## ✨ Features
-- ✅ Zero-touch CI/CD — triggered by tag push.
+## ✨ Key Results (Highlights)
+
+### 🔬 Subtype Survival Analysis
+<p align="center">
+  <img src="results/HANDOFF_FINAL/KM_by_CC.png" alt="Kaplan-Meier Survival by Consensus Clusters" width="500"/>
+</p>
+
+Kaplan–Meier survival plot shows distinct TNBC subtypes with significantly different survival outcomes, validating the biological and clinical relevance of our clusters.
+
+---
+
+### 🧠 Machine Learning Feature Importance
+<p align="center">
+  <img src="results/HANDOFF_FINAL/feature_importance_top25.png" alt="Top 25 Features Importance" width="500"/>
+</p>
+
+Feature importance analysis highlights the top genomic/multi-omics biomarkers driving TNBC subtype classification, enabling interpretability and reproducibility.
+
+---
+
+## ⚡ Features
+- ✅ Zero-touch CI/CD — runs automatically on tag push.
 - 📦 Artifacts included: reports, manifests, reproducible bundles.
 - 🔑 Secure publishing with PAT (RELEASE_TOKEN).
-- 🛡 SHA-256 integrity verification for all deliverables.
+- 🛡 SHA-256 verification for all deliverables.
 - 📊 Future-ready for integration with TNBC AI pipelines.
 
 ---
@@ -29,14 +48,14 @@ Every tagged commit triggers GitHub Actions to:
 ## 📂 Release Assets
 Each release ships with:
 
-| File                    | Description                         |
-|-------------------------|-------------------------------------|
-| TNBC_master_bundle.zip | Complete master deliverable         |
-| TNBC_repro_bundle.zip  | Minimal reproducibility bundle      |
-| release_manifest_M3.tsv| Detailed manifest of included files |
-| checksums_M3.sha256    | Integrity verification              |
+| File                     | Description                          |
+|--------------------------|--------------------------------------|
+| TNBC_master_bundle.zip   | Complete master deliverable          |
+| TNBC_repro_bundle.zip    | Minimal reproducibility bundle       |
+| release_manifest_M3.tsv  | Detailed manifest of included files  |
+| checksums_M3.sha256      | Integrity verification               |
 
-👉 [*Browse all releases here*](https://github.com/Baashi27-ai/tnbc-m1/releases)
+👉 Browse all releases here: [Releases](https://github.com/Baashi27-ai/tnbc-m1/releases)
 
 ---
 
@@ -49,7 +68,7 @@ flowchart LR
   C --> D[Build master & repro bundles]
   D --> E[Generate checksums & manifest]
   E --> F[Create GitHub Release + Upload Assets]
-  F -->|Publish| G[(Release)]﻿
+  F -->|Publish| G[(Release)]
 
 
 
