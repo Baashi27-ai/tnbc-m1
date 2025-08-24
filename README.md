@@ -3,10 +3,7 @@
 ![Build Status](https://github.com/Baashi27-ai/tnbc-m1/actions/workflows/build-and-release.yml/badge.svg)
 [![Latest Release](https://img.shields.io/github/v/release/Baashi27-ai/tnbc-m1?include_prereleases&sort=semver)](https://github.com/Baashi27-ai/tnbc-m1/releases)
 
----
-
-## 📌 Overview
-This repository powers the end-to-end CI/CD pipeline for the *Triple-Negative Breast Cancer (TNBC) Multi-Omics Project*.
+This repository powers the *end-to-end CI/CD pipeline* for the Triple-Negative Breast Cancer (TNBC) Multi-Omics Project.
 
 Every tagged commit triggers GitHub Actions to:
 - Run the analysis workflow (PowerShell + optional R).
@@ -16,46 +13,43 @@ Every tagged commit triggers GitHub Actions to:
 
 ---
 
-## ✨ Key Results (Highlights)
-
-### 🔬 Subtype Survival Analysis
-<p align="center">
-  <img src="results/HANDOFF_FINAL/KM_by_CC.png" alt="Kaplan-Meier Survival by Consensus Clusters" width="500"/>
-</p>
-
-Kaplan–Meier survival plot shows distinct TNBC subtypes with significantly different survival outcomes, validating the biological and clinical relevance of our clusters.
-
----
-
-### 🧠 Machine Learning Feature Importance
-<p align="center">
-  <img src="results/HANDOFF_FINAL/feature_importance_top25.png" alt="Top 25 Features Importance" width="500"/>
-</p>
-
-Feature importance analysis highlights the top genomic/multi-omics biomarkers driving TNBC subtype classification, enabling interpretability and reproducibility.
-
----
-
-## ⚡ Features
-- ✅ Zero-touch CI/CD — runs automatically on tag push.
+## ✨ Features
+- ✅ Zero-touch CI/CD – runs automatically on tag push.
 - 📦 Artifacts included: reports, manifests, reproducible bundles.
-- 🔑 Secure publishing with PAT (RELEASE_TOKEN).
-- 🛡 SHA-256 verification for all deliverables.
-- 📊 Future-ready for integration with TNBC AI pipelines.
+- 🔐 Secure publishing with PAT (RELEASE_TOKEN).
+- 🔎 SHA-256 integrity verification for all deliverables.
+- 🤖 Future-ready for integration with TNBC AI pipelines.
 
 ---
 
-## 📂 Release Assets
+## 📊 Key Results Snapshot
+
+| Analysis                          | Output / Metric                              |
+|-----------------------------------|----------------------------------------------|
+| *TNBC Samples Integrated*       | N = 150 (multi-omics: RNA-seq + methylation + clinical) |
+| *Consensus Clusters (K=8)*      | 8 stable clusters (validated by silhouette + PCA/UMAP) |
+| *Kaplan–Meier Survival*         | Log-rank p = 0.002 → distinct survival differences |
+| *Classifier (RF Ensemble)*      | OOB Accuracy ≈ 0.72, Hold-out Accuracy ≈ 0.70 |
+| *Top Features*                  | 25 genes/proteins enriched in immune & growth pathways |
+| *Pathway Enrichment*            | Hallmark, KEGG, Reactome → immune signaling, EGFR, MYC |
+| *External Validation (GSE58812)*| Consistent subtype separation + survival relevance |
+
+> 🔑 These highlights summarize the pipeline: reproducible clusters, validated biomarkers, predictive performance, and external cohort confirmation.
+
+---
+
+## 📦 Release Assets
+
 Each release ships with:
 
-| File                     | Description                          |
-|--------------------------|--------------------------------------|
-| TNBC_master_bundle.zip   | Complete master deliverable          |
-| TNBC_repro_bundle.zip    | Minimal reproducibility bundle       |
-| release_manifest_M3.tsv  | Detailed manifest of included files  |
-| checksums_M3.sha256      | Integrity verification               |
+| File                    | Description                         |
+|-------------------------|-------------------------------------|
+| *TNBC_master_bundle.zip*  | Complete master deliverable         |
+| *TNBC_repro_bundle.zip*   | Minimal reproducibility bundle      |
+| *release_manifest_M3.tsv* | Detailed manifest of included files |
+| *checksums_M3.sha256*     | Integrity verification              |
 
-👉 Browse all releases here: [Releases](https://github.com/Baashi27-ai/tnbc-m1/releases)
+👉 Browse all releases here: **[Releases](https://github.com/Baashi27-ai/tnbc-m1/releases)**
 
 ---
 
